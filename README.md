@@ -16,9 +16,9 @@ An interactive cell architecture gallery built with React, Vite, Three.js, and s
 
 [Open the live Vercel deployment](https://cell-architecture-studio-inky.vercel.app)
 
-<video src="https://github.com/cclank/cell-architecture-studio/raw/main/docs/media/cell-architecture-studio-demo.mp4" controls muted playsinline width="100%"></video>
+[![Cell Architecture Studio demo](docs/media/cell-architecture-studio-demo.gif)](https://cell-architecture-studio-inky.vercel.app)
 
-[View the demo video file](docs/media/cell-architecture-studio-demo.mp4)
+[View the MP4 demo file](docs/media/cell-architecture-studio-demo.mp4)
 
 ## Highlights
 
