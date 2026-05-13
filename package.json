@@ -28,6 +28,7 @@
     "three": "^0.181.2"
   },
   "devDependencies": {
+    "@types/three": "^0.184.1",
     "@types/node": "^24.10.1",
     "@types/pngjs": "^6.0.5",
     "@types/react": "^19.2.2",

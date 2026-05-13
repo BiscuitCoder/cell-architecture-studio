@@ -5,7 +5,8 @@ export type ModelKind =
   | "epithelial"
   | "bacteria"
   | "animal"
-  | "muscle";
+  | "muscle"
+  | "rz";
 
 export type ViewMode = "mesh" | "focus";
 
@@ -234,6 +235,86 @@ export const cells: CellItem[] = [
         note:
           "Granules store molecules that help immune cells respond quickly to infection or inflammation.",
         fact: "Some immune cells are named by how their granules stain.",
+      },
+    ],
+  },
+  {
+    id: "rz",
+    name: "Ninja Turtle",
+    type: "Sewer-Trained Hero",
+    accent: "#7b4bb3",
+    accentSoft: "#eee3f8",
+    color: "#8fa878",
+    modelKind: "rz",
+    defaultOrganelle: "mask",
+    comparison: "animal",
+    renderImage: {
+      url: "/cell-renders/rz.png",
+      aspect: "square",
+    },
+    modelAsset: {
+      url: "/models/rz.glb",
+      previewUrl: "/cell-renders/rz.png",
+      sourceLabel: "User RZ GLB",
+      sourceUrl: "local:public/models/rz.glb",
+      scale: 3.05,
+      rotation: [0.02, -0.38, 0],
+      position: [0, -0.05, 0],
+      exposure: 1.04,
+      materialMode: "native",
+    },
+    occurrence: {
+      title: "Sewers, rooftops, pizza zones",
+      body: "A shell-backed troublemaker with advanced snack instincts, suspiciously good balance, and a serious purple-mask agenda.",
+      motif: "asset",
+    },
+    microscope: [
+      { label: "Render Preview", tone: "#9c77c8", pattern: "tissue-light" },
+      { label: "Model Texture", tone: "#8fa878", pattern: "plant-light" },
+      { label: "Studio Lighting", tone: "#8f8f91", pattern: "electron" },
+    ],
+    organelles: [
+      {
+        id: "mask",
+        name: "Purple Mask",
+        subtitle: "Built-in dramatic squint",
+        color: "#7b4bb3",
+        attributes: [
+          { label: "Role", value: "Crime-fighting flair" },
+          { label: "Position", value: "Peak forehead attitude" },
+          { label: "Material", value: "Maximum confidence" },
+        ],
+        note:
+          "The purple mask is doing at least 70% of the intimidation work, with the remaining 30% handled by the side-eye.",
+        fact: "This expression says: I calculated the plan, and yes, it still ends with pizza.",
+      },
+      {
+        id: "staff",
+        name: "Bo Staff",
+        subtitle: "Personal space enforcement tool",
+        color: "#8b5a3c",
+        attributes: [
+          { label: "Shape", value: "Long bonk cylinder" },
+          { label: "Position", value: "Ready for nonsense" },
+          { label: "Role", value: "Drama pointer" },
+        ],
+        note:
+          "The staff gives the pose a clear message: questions are welcome, bad decisions will be redirected.",
+        fact: "Excellent for martial arts, dramatic pointing, and keeping pizza thieves at measurable distance.",
+      },
+      {
+        id: "shell",
+        name: "Hero Shell",
+        subtitle: "Tactical backpack, biologically installed",
+        color: "#6f7f54",
+        attributes: [
+          { label: "Shape", value: "Rounded" },
+          { label: "Position", value: "Snack-protected back" },
+          { label: "Role", value: "Emergency retreat mode" },
+        ],
+        note:
+          "The shell adds instant credibility to every rooftop landing, even the ones that were definitely not planned.",
+        fact: "Nature looked at armor and said: what if it also carried leftovers?",
       },
     ],
   },

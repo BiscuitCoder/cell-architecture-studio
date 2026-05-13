@@ -1,3 +1,4 @@
+.tmp/
 node_modules/
 dist/
 verification/
@@ -11,3 +12,4 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 .vercel
+.npm-cache/
